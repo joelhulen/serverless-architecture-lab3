@@ -25,7 +25,7 @@ namespace TollBooth
             _log = log;
             // Retrieve storage account information from connection string.
             var storageAccount = CloudStorageAccount.Parse(_blobStorageConnection);
-
+            var msg = "Some unsubstancial change here";
             // Create a blob client for interacting with the blob service.
             _blobClient = storageAccount.CreateCloudBlobClient();
         }
